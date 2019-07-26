@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/details_dp.css">
+    <title>补号--查看补号单</title>
+</head>
+<body>
+<header class="heading">
+    <div class="navbar">
+        <ul class="uling">
+            <li><a href="{{ url_for('user.qa') }}">退出登录</a></li>
+            <h2 class="check">查看补号单</h2>
+        </ul>
+    </div>
+</header>
+
+
+<div class="con">
+    <div class="box">
+        <div class="box1">
+            <div class="item1">
+            <form action="conform.html" method="post">                
+                <input type="submit" class="btns" value="连续补号单">
+                </form>
+            <form action="disconform.html" method="post">
+                <input type="submit" value="非连续补号单" class="btns">
+                </form>
+           </div>
+       </div>
+    </div>
+</div>
+</body>
+</html>

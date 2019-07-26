@@ -1,0 +1,61 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/search_result.css">
+    <title>补号--查看补号单</title>
+</head>
+<body>
+<header class="heading">
+    <div class="navbar">
+        <ul class="uling">
+            <li><a href="{{ url_for('user.qa') }}">退出登录</a></li>
+            <h2 class="check">查看补号单</h2>
+        </ul>
+    </div>
+</header>
+<div class="con">
+    <div class="box">
+<table border="1" align="center">
+    <caption>连续补号单</caption>
+            <tr>
+                <th>补号单id</th>
+                <th>补号开始码</th>
+                <th>补号结束码</th>
+                <th>描述</th>
+                <th>类型A</th>
+                <th>类型B</th>
+                <th>类型C</th>
+                <th>当前审核状态</th>
+                <th>当前校验状态</th>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>10</td>
+                <td>15</td>
+                <td>需要补z0，01，0031的00010到00020号段</td>
+                <td>z0</td>
+                <td>01</td>
+                <td>00030</td>
+                <td>已同意</td>
+                <td>未校验</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>10</td>
+                <td>50</td>
+                <td>要补00010到00050的号码</td>
+                <td>12</td>
+                <td>12</td>
+                <td>z003</td>
+                <td>已同意</td>
+                <td>未校验</td>
+            </tr>
+</table>
+    </div>
+
+</div>
+</body>
+</html>

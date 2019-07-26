@@ -1,0 +1,58 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/search_result.css">
+    <title>补号--查看补号单</title>
+</head>
+<body>
+<header class="heading">
+    <div class="navbar">
+        <ul class="uling">
+            <li><a href="{{ url_for('user.qa') }}">退出登录</a></li>
+            <h2 class="check">查看补号单</h2>
+        </ul>
+    </div>
+</header>
+<div class="con">
+    <div class="box">
+<table border="1" align="center">
+    <caption>非连续补号单</caption>
+            <tr>
+                <th>补号单id</th>
+                <th>补号码</th>               
+                <th>描述</th>
+                <th>类型A</th>
+                <th>类型B</th>
+                <th>类型C</th>
+                <th>当前审核状态</th>
+                <th>当前校验状态</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>05</td>             
+                <td>要补号码05</td>
+                <td>14</td>
+                <td>16</td>
+                <td>z002</td>
+                <td>已同意</td>
+                <td>未校验</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>46</td>
+                <td>要补好吗46</td>
+                <td>12</td>
+                <td>12</td>
+                <td>z001</td>
+                <td>未同意</td>
+                <td>未校验</td>
+            </tr>
+        
+    </div>
+
+</div>
+</body>
+</html>
